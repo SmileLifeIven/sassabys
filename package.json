@@ -1,6 +1,6 @@
 {
   "name": "sassaby-next",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A copy of sassaby with node-sass@4.x",
   "keywords": [
     "sass",
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/youluna/sassaby"
+    "url": "https://github.com/SmileLifeIven/sassabys"
   },
   "main": "src/sassaby",
   "dependencies": {
