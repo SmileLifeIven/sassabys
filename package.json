@@ -1,7 +1,7 @@
 {
-  "name": "sassaby-next",
+  "name": "sassabys",
   "version": "3.0.1",
-  "description": "A copy of sassaby with node-sass@4.x",
+  "description": "A copy of sassaby with node-sass@4.x for window",
   "keywords": [
     "sass",
     "scss",
