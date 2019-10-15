@@ -1,0 +1,36 @@
+{
+  "name": "sassaby-next",
+  "version": "3.0.0",
+  "description": "A copy of sassaby with node-sass@4.x",
+  "keywords": [
+    "sass",
+    "scss",
+    "testing",
+    "unit testing",
+    "bdd",
+    "tdd",
+    "test"
+  ],
+  "author": "Ryan Bahniuk <ryan.bahniuk@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youluna/sassaby"
+  },
+  "main": "src/sassaby",
+  "dependencies": {
+    "css": "^2.2.0",
+    "cssmin": "^0.4.3",
+    "mocha": "^2.2.5",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "proxyquire": "^1.5.0",
+    "sinon": "^1.14.1"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha",
+    "testWindow": "set NODE_ENV=test && set scssBasePath=test && node test/index.js && mocha test"
+  }
+}
