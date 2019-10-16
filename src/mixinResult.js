@@ -1,6 +1,6 @@
 'use strict';
 
-var assert = require('assert');
+var assert = require('chai').assert;
 var cssmin = require('cssmin');
 var utilities = require('./utilities');
 var parsers = require('./parsers');
@@ -152,7 +152,14 @@ MixinResult.prototype = {
     var mixinCss = utilities.createCss(this.file, wrapMixin(this.type, mixin));
     var message = 'Mixin called ' + mixin + '.';
     assert(this.css.indexOf(unwrapOutput(this.type, mixinCss)) === -1, message);
-  }
+  },
+
+  include: function(output) {
+    var wrappedOutput = wrapOutput(this.type, output);
+    var message = 'Mixin output is ' + this.css + ' and you gave ' + wrappedOutput + '.';
+    assert.include(this.css, wrappedOutput, message);
+  },
+
 };
 
 if (process.env.NODE_ENV.trim() === 'test') {

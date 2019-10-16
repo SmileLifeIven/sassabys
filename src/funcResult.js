@@ -1,6 +1,6 @@
 'use strict';
 
-var assert = require('chai').assert
+var assert = require('chai').assert;
 var utilities = require('./utilities');
 
 function wrapFunctionWithArgs(call, args) {
@@ -78,7 +78,7 @@ FuncResult.prototype = {
   },
 
   include: function(result) {
-    var message = 'Function: ' + this.call + ' equals ' + result + '.';
+    var message = 'Function: ' + this.call + ' include ' + result + '.';
     assert.include(this.css, result, message);
   }
 };
